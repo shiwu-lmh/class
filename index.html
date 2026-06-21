@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>机器学习知识库 · 精炼速查手册</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════ SIDEBAR ═══════════════ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-head">
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">📚 机器学习知识库</a>
+    <div class="sub">50+份文档 · 10大归类 · 交互可视化</div>
+  </div>
+  <div class="sidebar-search">
+    <input type="text" id="navSearch" placeholder="🔍  搜索知识点…">
+  </div>
+  <nav class="sidebar-nav" id="sidebarNav"></nav>
+  <div class="sidebar-foot">
+    <span>离线可用·纯静态</span>
+    <span style="color:var(--accent)">AxureShow Ready</span>
+  </div>
+</aside>
+
+<!-- ═══════════════ HAMBURGER ═══════════════ -->
+<button class="hamburger" id="hamburger" aria-label="菜单"><span></span></button>
+<div class="overlay" id="overlay"></div>
+
+<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+<main class="main">
+  <div class="main-inner" id="mainContent"></div>
+</main>
+
+<!-- ═══════════════ RIGHT TOC (On This Page) ═══════════════ -->
+<aside class="toc-container" id="tocContainer">
+  <div class="toc-title">📑 本
+    页目录</div>
+  <ul class="toc-list" id="tocList"></ul>
+</aside>
+
+<!-- ═══════════════ BACK TO TOP ═══════════════ -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script src="viz-core.js"></script>
+<script src="viz-l1l2.js"></script>
+<script src="viz-gradient.js"></script>
+<script src="viz-kmeans.js"></script>
+<script src="viz-activation.js"></script>
+<script src="viz-cnn.js"></script>
+<script src="viz-sorting.js"></script>
+<script src="viz-nn-forward.js"></script>
+<script src="viz-confusion.js"></script>
+<script src="viz-overfitting.js"></script>
+<script src="viz-knn-boundary.js"></script>
+<script src="viz-dropout.js"></script>
+<script src="viz-lr-compare.js"></script>
+<script src="viz-softmax-temp.js"></script>
+<script src="viz-decision-tree.js"></script>
+<script src="viz-pooling.js"></script>
+<script src="viz-rnn.js"></script>
+<script src="viz-rnn-modes.js"></script>
+<script src="viz-lstm.js"></script>
+<script src="viz-gru.js"></script> 
+<script src="viz-nlp-tokenize.js"></script>
+<script src="viz-nlp-ngram.js"></script>
+<script src="viz-nlp-word2vec.js"></script>
+<script src="viz-self-attention.js"></script>
+<script src="viz-transformer.js"></script>
+<script src="viz-llm-timeline.js"></script>
+<script src="viz-ppl-calc.js"></script>
+<script src="viz-rag-flow.js"></script>
+<script src="viz-lora.js"></script>
+<script src="nav.js"></script>
+<script src="content.js"></script>
+<script>
+// 页面初始化：构建导航→渲染内容
+Content.render();
+</script>
+</body>
+</html>
